@@ -1,12 +1,40 @@
 body
 {
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 	font-size: 12px;
 	font-family: Arial;
 }
 
+h1
+{
+	text-align: center; 
+	border: solid;
+}
+
+#menu
+{
+	float: left; 
+	width: 200px; 
+	border: solid; 
+}
+
 #main-info
+{
+	float: left;
+	width: 630px; 
+	border: solid; 
+}
+
+#main-content
+{
+	height: 600px;
+	padding: 10px;
+	margin: 10px; 
+	border: solid; 
+}
+
+/*#main-info
 {
 	float: left;
 	width: 627px;
@@ -73,4 +101,4 @@ body
 audio
 {
 	width: 230px;
-}
+}*/
