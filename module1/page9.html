@@ -4,12 +4,14 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/quiz.js" lang="javascript"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body>
 	
-	<h1>Adding and Subtracting Fractions with Unlike Denominators</h1>
+	<h1>Adding and Subtracting Fractions with Like Denominators</h1>
+
 	
 	<div id="main-content">
 		
@@ -27,12 +29,46 @@
 			<a href="page10.html">10 - Certificate</a><br>
 			<a href="page11.html">11 - References</a><br>
 		</div>
-	
-		<div id="main-info">
-			<img src="images/p9.jpg" alt="Page 9 Wireframe" title="Page 9 Wireframe">
+
+		
+		<div class="content">
+					<article>
+					<header>
+						<h2>Test Time!</h2>
+					</header>
+					<p>To complete the quiz, choose the correct answer for each question. Once you
+					have selected all your answers, click the "Submit Answers" button to retrieve
+					your score.</p>
+ 					
+					<form action="javascript:processForm()" id="quiz1" name="quiz1">
+					
+					<label for="question1">What is the schnauzer's origin?</label>
+				
+					<br><input type="radio" id="question1" name="question1" value="0"/> Atlantis<br/>
+					<input type="radio" id="question1" name="question1" value="1"/> German<br/>
+					<input type="radio" id="question1" name="question1" value="2"/> El Dorado<br/>
+					
+					<br><label for="question2">What is one type of schnauzer size?</label>
+					
+					<br><input type="radio" id="question2" name="question2" value="0"/> Miniature<br/>
+					<input type="radio" id="question2" name="question2" value="1"/> Invisible<br/>
+					<input type="radio" id="question2" name="question2" value="2"/> XXL with fries<br/>
+					
+					<br><label for="question3">What is the life expectancy of a schnauzer? </label>
+					
+					<br><input type="radio" id="question3" name="question3" value="0"/> 12-15 years<br/>
+					<input type="radio" id="question3" name="question3" value="1"/> 180 years<br/>
+					<input type="radio" id="question3" name="question3" value="2"/> 2 seconds<br/>
+					
+					<br><input type="submit" value="Submit Answers"/>
+					</form>
+				</article>
+			</div>
 
 		</div>
-		
 	</div>
+		<div id="footer">
+			<h2>Additional Resources</h2>
+		</div>
 	</body>
 </html>
