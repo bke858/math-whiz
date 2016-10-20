@@ -1,1 +1,122 @@
-Unexpected error.  File contents could not be restored from local history during undo/redo.
+body
+{
+	margin: 0px;
+	padding: 5px;
+	font-size: 12px;
+	font-family: Arial;
+	width: 900px; 
+}
+
+h1
+{
+	
+	text-align: center; 
+	border: solid;
+}
+
+#menu
+{
+	display: table-cell; 
+	width: 200px;
+	height: 400px; 
+	margin: 10px;   
+}
+
+
+#main-content
+{ 
+	padding: 10px;
+	margin: 10px; 
+	display: table; 
+	width: 
+
+}
+
+#matching
+{
+	float: left; 
+}
+
+.content
+{
+	border: solid;
+	padding: 10px; 
+	display: table-cell; 
+}
+
+#footer
+{
+	border: solid; 
+	text-align: center; 
+}
+
+
+
+/*#main-info
+{
+	float: left;
+	width: 627px;
+}
+
+#aside-info
+{
+	float: left;
+	width: 200px;
+	vertical-align: top;
+	padding-left: 10px;
+}
+	
+#main-content
+{
+	height: 368px;
+	padding: 10px;
+	margin: 10px;
+}
+
+#navigation
+{
+	background: #666666;	
+	padding: 5px;
+	width: 886px;
+	float: left;
+	height: 18px;
+}
+
+#sub-navigation
+{
+	background: #dddddd;	
+	padding: 5px;
+	width: 886px;
+	float: left;
+	height: 18px;
+	font-size: 14px;
+}
+
+#aside-title-audio
+{
+	background: #666666;
+	width: 233px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+}
+
+#content-frame
+{
+	border: none;
+}
+	
+#transcript
+{
+	color: green;
+	font-size: 12px;
+	overflow: auto;
+	height: 321px;
+	width: 233px;
+}
+
+audio
+{
+	width: 230px;
+}*/

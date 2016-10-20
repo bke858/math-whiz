@@ -1,1 +1,84 @@
-Unexpected error.  File contents could not be restored from local history during undo/redo.
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Page title here</title>
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/drag-and-drop.js"></script>
+		
+		<!--- link your other script files here that are specific to this HTML page here --->
+	</head>	
+	<body>
+	
+	<img src="images/running-header-1.png" alt="Running Header" title="Running Header">
+
+	<div id="main-content">
+		
+		<div id="menu">
+			<h2>Navigation</h2>
+			<a href="page1.html">1 - Title</a><br>
+			<a href="page2.html">2 - Objective-Description</a><br>
+			<a href="page3.html">3 - Video-Real Life Example</a><br>
+			<a href="page4.html">4 - Example Video</a><br>
+			<a href="page5.html">5 - Denominator Concrete Model explanation</a><br>
+			<a href="page6.html">6 - Adding fraction problems: Matching equations and answers</a><br>
+			<a href="page7.html">7 - Subtract fraction problems: Matching equation and answers</a><br>
+			<a href="page8.html">8 - Simplifying </a><br>
+			<a href="page9.html">9 - Quiz</a><br>
+			<a href="page10.html">10 - Certificate</a><br>
+			<a href="page11.html">11 - References</a><br>
+		</div>
+	
+		
+		<div class="content">
+			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				<p>Match each English word with its French equivalent.</p>
+				
+				<div class="column">
+						<h3>Fraction</h3>
+					 	<div id="d1" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>cat</p></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>horse</p></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>dog</p></div><br/>  
+					 	<div id="d4" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>bird</p></div><br/>  
+				</div>
+				
+				    
+				<div class="column">
+						<h3>Simplified Fraction</h3>
+				     	<div id="db1" value="0" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>le chien</p></div><br/>                        
+				 		<div id="db2" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>l'oiseau</p></div><br/>  
+					 	<div id="db3" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>le cheval </p></div><br/> 
+					 	<div id="db4" value="3" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>le chat</p></div><br/>  
+				</div>
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
+
+		</div>
+	</div>
+		<div id="footer">
+			<h2>Additional Resources</h2>
+		</div>
+	</body>
+</html>
