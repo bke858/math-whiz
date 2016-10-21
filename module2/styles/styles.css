@@ -4,35 +4,59 @@ body
 	padding: 5px;
 	font-size: 12px;
 	font-family: Arial;
+	width: 900px; 
+}
+
+td
+{
+	padding: 10px; 
+	border: solid; 
 }
 
 h1
 {
+	
 	text-align: center; 
 	border: solid;
 }
 
 #menu
 {
-	float: left; 
-	width: 200px; 
-	border: solid; 
+	display: table-cell; 
+	width: 200px;
+	height: 400px; 
+	margin: 10px;   
 }
 
-#main-info
-{
-	float: left;
-	width: 630px; 
-	border: solid; 
-}
 
 #main-content
-{
-	height: 600px;
+{ 
 	padding: 10px;
 	margin: 10px; 
-	border: solid; 
+	display: table; 
+	width: 
+
 }
+
+#matching
+{
+	float: left; 
+}
+
+.content
+{
+	border: solid;
+	padding: 10px; 
+	display: table-cell; 
+}
+
+#footer
+{
+	border: solid; 
+	text-align: center; 
+}
+
+
 
 /*#main-info
 {

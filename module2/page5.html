@@ -3,36 +3,74 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
+		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
+		<script lang="javascript" src="scripts/hot-spots.js"></script>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body>
 	
-	<h1>Adding and Subtracting Fractions with Unlike Denominators</h1>
-	
+	<img src="images/unlike-header.png" alt="Running Header" title="Running Header">
+	<h1>Hot Spot Activity</h1>
+
 	<div id="main-content">
-		
+			
 		<div id="menu">
 			<h2>Navigation</h2>
 			<a href="page1.html">1 - Title</a><br>
 			<a href="page2.html">2 - Objective-Description</a><br>
 			<a href="page3.html">3 - Video-Real Life Example</a><br>
 			<a href="page4.html">4 - Example Video</a><br>
-			<a href="page5.html">5 - Hot Spot Activity</a><br>
-			<a href="page6.html">6- Matching Common Denominators/Equivalent Fractions</a><br>
-			<a href="page7.html">7 - Adding/Subtracting Fractions: Matching equation and answers</a><br>
-			<a href="page8.html">8 - Problem Solving Match</a><br>
+			<a href="page5.html">5 - Denominator Concrete Model explanation</a><br>
+			<a href="page6.html">6 - Adding fraction problems: Matching equations and answers</a><br>
+			<a href="page7.html">7 - Subtract fraction problems: Matching equation and answers</a><br>
+			<a href="page8.html">8 - Simplifying </a><br>
 			<a href="page9.html">9 - Quiz</a><br>
 			<a href="page10.html">10 - Certificate</a><br>
 			<a href="page11.html">11 - References</a><br>
 		</div>
-	
-		<div id="main-info">
-			<img src="images/p5.jpg" alt="Page 5 Wireframe" title="Page 5 Wireframe">
+		
+		<div class="content">
+			 <section>
+            	<p>Hover your mouse over each item to learn its French equivalent.</p>
+				
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><p>cat</p></div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><p>horse</p></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><p>dog</p></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><p>bird</p></div>
+					</div>
+				</div>
+				    
+            </section>
+            <section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
 
 		</div>
-		
 	</div>
+		<div id="footer">
+			<h2>Additional Resources</h2>
+		</div>
 	</body>
 </html>
