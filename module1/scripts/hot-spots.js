@@ -9,19 +9,23 @@ function showText( number )
 	
 	if( number == 1 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le chat";
+		document.getElementById( "output-text" ).innerHTML = <img src="images/hotspot-3.png" alt="Fraction" 
+     		title = "fraction" >;
 	}
 	else if( number == 2 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le cheval";
+		document.getElementById( "output-text" ).innerHTML = <img src="images/hotspot-4.png" alt="Fraction" 
+     		title = "fraction" >;
 	}
 	else if( number == 3 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le chien";
+		document.getElementById( "output-text" ).innerHTML = <img src="images/hotspot2-3.png" alt="Fraction" 
+     		title = "fraction" >;
 	}
 	else if( number == 4 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "l'oiseau";
+		document.getElementById( "output-text" ).innerHTML = <img src="images/hotspot2-4.png" alt="Fraction" 
+     		title = "fraction" >;
 	}
 }
 

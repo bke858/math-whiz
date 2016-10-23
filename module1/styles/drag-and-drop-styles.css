@@ -2,18 +2,19 @@
 {
 	display: table-cell;
 	padding: 50px;
-	width: 200px;
+	width: 325px;
 }
 
 .dragger
 {
-	border: solid thin #000000;
-	background: #999999;
-	
+	border: solid thick #000000;
+	background: #004080;	
 	text-align: center;
-	height: 50px;
-	width: 150px;
+	height: 100%;
+	width: 100%;
 	vertical-align: center;
+	horizontal-align: center;
+	margin: auto;
 	cursor: move;
 	position: relative;
 	ghosting: true;
@@ -26,11 +27,15 @@
 
 .draggerbay
 {
-	border: dashed thin #000000;
-	height: 50px;
-	width: 150px;
+	border: solid thick #000000;
+	background: #004080;
 	text-align: center;
-	background: #ccccee;
+	height: 100%;
+	width: 100%;
+	vertical-align: center;
+	horizontal-align: center;
+	margin: auto;
+	position: relative;
 }
 
 [draggable=true] 

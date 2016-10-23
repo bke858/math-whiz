@@ -14,23 +14,24 @@ h1
 	border: solid;
 }
 
+	
+#main-layout
+{
+	display: table;
+}
+			
+
 #menu
 {
 	display: table-cell; 
 	width: 200px;
+    margin; auto;
 	height: 400px; 
 	margin: 10px;   
 }
 
 
-#main-content
-{ 
-	padding: 10px;
-	margin: 10px; 
-	display: table; 
-	width: 
 
-}
 
 #matching
 {
@@ -42,6 +43,23 @@ h1
 	border: solid;
 	padding: 10px; 
 	display: table-cell; 
+	text-align: center;
+}
+
+#content2
+{
+	border: solid;
+	padding: 10px;
+	display: table-cell;
+	width: 150px;
+	height: 75px;
+}
+
+.objectives
+{
+	font-family: arial;
+	font-size: 20px;
+	color: #000000;
 }
 
 #footer
@@ -71,7 +89,8 @@ h1
 	height: 368px;
 	padding: 10px;
 	margin: 10px;
-}
+	display: table-cell;
+	}
 
 #navigation
 {

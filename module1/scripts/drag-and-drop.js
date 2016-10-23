@@ -4,7 +4,7 @@ var oCurrentDragger = null;
 // this array corresponds to the dragger bays
 // if you create more draggers and dragger bays, increase the argument 
 // the default is 4.
-var aDraggerBays = new Array( 4 );	
+var aDraggerBays = new Array( 3 );	
 
 // initialize the dragger bays to -1.  -1 means that there is no dragger there.
 for( var i = 0; i < aDraggerBays.length; i = i + 1 )
@@ -36,7 +36,7 @@ function processForm()
 	else
 	{
 		// link back to the same page.
-		document.getElementById( "response" ).innerHTML = "Incorrect!  <a href='page7.html'>click here to try again</a>";
+		document.getElementById( "response" ).innerHTML = "Incorrect!  <a href='index.html'>click here to try again</a>";
 	}
 }
 

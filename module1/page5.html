@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>Page title here</title>
-		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<title></title>
+		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/hot-spots.js"></script>
+		
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -11,9 +13,9 @@
 	
 	<img src="images/running-header-1.png" alt="Running Header" title="Running Header">
 	
-		<div id="objectives">
+		<div class="objectives">
 			<p>Directions</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget efficitur purus, a consequat nibh. Maecenas eu facilisis augue. Ut posuere blandit justo eu ultricies. Nam nec faucibus quam, posuere elementum velit. In lobortis tincidunt faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut efficitur lacus. Mauris convallis tortor arcu, sed ornare erat aliquam non. Nunc id pharetra magna. Donec a ultricies mauris, sit amet posuere tortor.</p>
+			<p> Hover your mouse over each fraction to see is visual equivalent.
 		</div>
 	
 	<div id="main-content">
@@ -25,8 +27,8 @@
 			<a href="page3.html">3 - Video-Real Life Example</a><br>
 			<a href="page4.html">4 - Example Video</a><br>
 			<a href="page5.html">5 - Denominator Concrete Model explanation</a><br>
-			<a href="page6.html">6 - Adding fraction problems: Matching equations and answers</a><br>
-			<a href="page7.html">7 - Subtract fraction problems: Matching equation and answers</a><br>
+			<a href="page6.html">6 - Adding Fractions</a><br>
+			<a href="page7.html">7 - Subtracting Fractionss</a><br>
 			<a href="page8.html">8 - Simplifying </a><br>
 			<a href="page9.html">9 - Quiz</a><br>
 			<a href="page10.html">10 - Certificate</a><br>
@@ -34,24 +36,44 @@
 		</div>
 
 			
-			<div class="content">
-			<p>content goes here</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget efficitur purus, a consequat nibh. Maecenas eu facilisis augue. Ut posuere blandit justo eu ultricies. Nam nec faucibus quam, posuere elementum velit. In lobortis tincidunt faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut efficitur lacus. Mauris convallis tortor arcu, sed ornare erat aliquam non. Nunc id pharetra magna. Donec a ultricies mauris, sit amet posuere tortor.</p>
-			</div>
-			
-			<div class="content">
-			<p>content goes here</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget efficitur purus, a consequat nibh. Maecenas eu facilisis augue. Ut posuere blandit justo eu ultricies. Nam nec faucibus quam, posuere elementum velit. In lobortis tincidunt faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut efficitur lacus. Mauris convallis tortor arcu, sed ornare erat aliquam non. Nunc id pharetra magna. Donec a ultricies mauris, sit amet posuere tortor.</p>
-			</div>
-			
-			<div class="content">
-			<p>content goes here</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget efficitur purus, a consequat nibh. Maecenas eu facilisis augue. Ut posuere blandit justo eu ultricies. Nam nec faucibus quam, posuere elementum velit. In lobortis tincidunt faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut efficitur lacus. Mauris convallis tortor arcu, sed ornare erat aliquam non. Nunc id pharetra magna. Donec a ultricies mauris, sit amet posuere tortor.</p>
-			</div>
+			<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><p><img src="images/hotspot-1.png" alt="Fraction" 
+				     		title = "fraction" ></p></div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><p><img src="images/hotspot-2.png" alt="Fraction" 
+				     		title = "fraction" ></p></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><p><img src="images/hotspot2-1.png" alt="Fraction" 
+				     		title = "fraction" ></p></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><p><img src="images/hotspot2-2.png" alt="Fraction" 
+				     		title = "fraction" ></p></div>
+					</div>
+				</div>
+				    
+            </section>
+            <section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
 
-	</div>
-		<div id="footer">
-		<h2>Additional Resources</h2>
-		</div>
-	</body>
+        </article>
+    	<footer>
+        </footer>
+    </body>
 </html>

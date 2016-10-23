@@ -2,17 +2,16 @@
 {
 	display: table-cell;
 	padding: 10px;
-	width: 100px;
+	width: 200px;
 }
 
 .hotspot
 {
 	border: solid thin #000000;
-	background: #999999;
-	
+	background: #999999;	
 	text-align: center;
-	height: 50px;
-	width: 150px;
+	height: 107px;
+	width: 200px;
 	vertical-align: center;
 	position: relative;
 }
