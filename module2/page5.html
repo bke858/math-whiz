@@ -9,7 +9,7 @@
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body>
+	<body onload="javascript:parent.visitPage5()">
 	
 	<img src="images/unlike-header.png" alt="Running Header" title="Running Header">
 	<h1>Hot Spot Activity</h1>
@@ -19,42 +19,43 @@
 		<div id="menu">
 			<h2>Navigation</h2>
 			<a href="page1.html">1 - Title</a><br>
-			<a href="page2.html">2 - Objective-Description</a><br>
-			<a href="page3.html">3 - Video-Real Life Example</a><br>
-			<a href="page4.html">4 - Example Video</a><br>
-			<a href="page5.html">5 - Denominator Concrete Model explanation</a><br>
-			<a href="page6.html">6 - Adding fraction problems: Matching equations and answers</a><br>
-			<a href="page7.html">7 - Subtract fraction problems: Matching equation and answers</a><br>
-			<a href="page8.html">8 - Simplifying </a><br>
-			<a href="page9.html">9 - Quiz</a><br>
+			<a href="page2.html">2 - Objectives</a><br>
+			<a href="page3.html">3 - Examples</a><br>
+			<a href="page4.html">4 - How To Do It</a><br>
+			<a href="page5.html">5 - Hot Spot Activity</a><br>
+			<a href="page6.html">6 - Matching Activity 1</a><br>
+			<a href="page7.html">7 - Matching Activity 2</a><br>
+			<a href="page8.html">8 - Matching Activity 3</a><br>
+			<a href="page9.html" id="quiz-link">9 - Quiz</a><br>
 			<a href="page10.html">10 - Certificate</a><br>
 			<a href="page11.html">11 - References</a><br>
 		</div>
 		
 		<div class="content">
 			 <section>
-            	<p>Hover your mouse over each item to learn its French equivalent.</p>
+            	<p>Directions: Try finding the common denominator using the “big fat m” on a piece of paper or 
+            	whiteboard. Then hover over the fraction to see if you got it right!</p>
 				
 				<div id="hotspots">
 					<div class="column">
 					 	<div id="hs1" class="hotspot" 
 				     		onmouseover="javascript:showText( 1 )"
-				     		onmouseout="javascript:hideOutput()"><p>cat</p></div> 
+				     		onmouseout="javascript:hideOutput()"><img src="images/p5-input1.png" alt="Input 1" title="Input 1"></div> 
 					</div>
 					<div class="column">
 				     	<div id="hs2" class="hotspot" 
 				     		onmouseover="javascript:showText( 2 )"
-				     		onmouseout="javascript:hideOutput()"><p>horse</p></div>  
+				     		onmouseout="javascript:hideOutput()"><img src="images/p5-input2.png" alt="Input 2" title="Input 2"></div>  
 					</div>             
 					<div class="column">        
 				 		<div id="hs3" class="hotspot"
 				     		onmouseover="javascript:showText( 3 )"
-				     		onmouseout="javascript:hideOutput()"><p>dog</p></div> 
+				     		onmouseout="javascript:hideOutput()"><img src="images/p5-input3.png" alt="Input 3" title="Input 3"></div> 
 					</div>
 					<div class="column">
 					 	<div id="hs4" class="hotspot" 
 				     		onmouseover="javascript:showText( 4 )"
-				     		onmouseout="javascript:hideOutput()"><p>bird</p></div>
+				     		onmouseout="javascript:hideOutput()"><img src="images/p5-input4.png" alt="Input 4" title="Input 4"></div>
 					</div>
 				</div>
 				    

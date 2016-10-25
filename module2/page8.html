@@ -7,9 +7,8 @@
 		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
 		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body>
+	<body onload="javascript:parent.visitPage8()">
 	
 	<img src="images/unlike-header.png" alt="Running Header" title="Running Header">
 	<h1>Matching Activity 3</h1>
@@ -19,14 +18,14 @@
 		<div id="menu">
 			<h2>Navigation</h2>
 			<a href="page1.html">1 - Title</a><br>
-			<a href="page2.html">2 - Objective-Description</a><br>
-			<a href="page3.html">3 - Video-Real Life Example</a><br>
-			<a href="page4.html">4 - Example Video</a><br>
-			<a href="page5.html">5 - Denominator Concrete Model explanation</a><br>
-			<a href="page6.html">6 - Adding fraction problems: Matching equations and answers</a><br>
-			<a href="page7.html">7 - Subtract fraction problems: Matching equation and answers</a><br>
-			<a href="page8.html">8 - Simplifying </a><br>
-			<a href="page9.html">9 - Quiz</a><br>
+			<a href="page2.html">2 - Objectives</a><br>
+			<a href="page3.html">3 - Examples</a><br>
+			<a href="page4.html">4 - How To Do It</a><br>
+			<a href="page5.html">5 - Hot Spot Activity</a><br>
+			<a href="page6.html">6 - Matching Activity 1</a><br>
+			<a href="page7.html">7 - Matching Activity 2</a><br>
+			<a href="page8.html">8 - Matching Activity 3</a><br>
+			<a href="page9.html" id="quiz-link">9 - Quiz</a><br>
 			<a href="page10.html">10 - Certificate</a><br>
 			<a href="page11.html">11 - References</a><br>
 		</div>
@@ -34,22 +33,24 @@
 		
 		<div class="content">
 			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<p>Match each number sentence with its difference.</p>
+				<p>Directions: Solve each problem on another sheet of paper or whiteboard using the four step process 
+				“MEPS” then drag the problem to the correct answer.</p>  
+				<p>**Hint: Pay attention to the operation; are you adding or subtracting?</p>
 				
 				<div class="column">
 						<h3>Word Problem</h3>
 					 	<div id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>cat</p></div><br/>  
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger1.png" alt="Dragger 1" title="Dragger 1"></div><br/>  
 				     	<div id="d2" value="2" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>horse</p></div><br/>                        
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger2.png" alt="Dragger 2" title="Dragger 2"></div><br/>                        
 				 		<div id="d3" value="0" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>dog</p></div><br/>  
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger3.png" alt="Dragger 3" title="Dragger 3"></div><br/>  
 					 	<div id="d4" value="1" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>bird</p></div><br/>  
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger4.png" alt="Dragger 4" title="Dragger 4"></div><br/>  
 				</div>
 				
 				    
@@ -58,19 +59,19 @@
 				     	<div id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>le chien</p></div><br/>                        
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay1.png" alt="Bay 1" title="Bay 1"></div><br/>                        
 				 		<div id="db2" value="1" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>l'oiseau</p></div><br/>  
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay2.png" alt="Bay 2" title="Bay 2"></div><br/>  
 					 	<div id="db3" value="2" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>le cheval </p></div><br/> 
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay3.png" alt="Bay 3" title="Bay 3"></div><br/> 
 					 	<div id="db4" value="3" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>le chat</p></div><br/>  
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay4.png" alt="Bay 4" title="Bay 4"></div><br/>  
 				</div>
 				<p id="response">&nbsp;</p>
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
