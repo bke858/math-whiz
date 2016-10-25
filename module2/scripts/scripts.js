@@ -1,4 +1,5 @@
 
+
 // this file holds any scripts that have to do with communicating with the learning management system (LMS)
 
 // define a SCORM object to interface with LMS
@@ -35,7 +36,6 @@ function startCourse()
     		sessionStorage.setItem("visitPage6", "unvisited");
     		sessionStorage.setItem("visitPage7", "unvisited");
     		sessionStorage.setItem("visitPage8", "unvisited");
-
         }
 	}
 	
@@ -98,8 +98,9 @@ function checkAllVisited()
 	var page4 = sessionStorage.getItem("visitPage4");
 	var page5 = sessionStorage.getItem("visitPage5");
 	var page6 = sessionStorage.getItem("visitPage6");
-	var page6 = sessionStorage.getItem("visitPage7");
-	var page6 = sessionStorage.getItem("visitPage8");
+	var page7 = sessionStorage.getItem("visitPage7");
+	var page8 = sessionStorage.getItem("visitPage8");
+
 	//alert (page3);
 	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited")
 		{

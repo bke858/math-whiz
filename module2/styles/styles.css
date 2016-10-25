@@ -9,8 +9,8 @@ body
 
 td
 {
-	padding: 10px; 
-	border: solid; 
+	padding: 2px; 
+	 
 }
 
 h1
@@ -25,7 +25,8 @@ h1
 	display: table-cell; 
 	width: 200px;
 	height: 400px; 
-	margin: 10px;   
+	margin: 10px;  
+	vertical-align: top; 
 }
 
 
@@ -34,7 +35,6 @@ h1
 	padding: 10px;
 	margin: 10px; 
 	display: table; 
-	width: 
 
 }
 
@@ -45,7 +45,7 @@ h1
 
 .content
 {
-	border: solid;
+	
 	padding: 10px; 
 	display: table-cell; 
 }
@@ -56,7 +56,15 @@ h1
 	text-align: center; 
 }
 
+/*#quiz-link
+{
+	display: none; 
+}*/
 
+#certificate-link
+{
+	display: none; 
+}
 
 /*#main-info
 {
