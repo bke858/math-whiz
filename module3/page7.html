@@ -4,44 +4,18 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body>
+	<body onload="javascript:parent.visitPage6()">
 	
-	<h1>Multiplying and Dividing Fractions</h1>
-	
+	<img src="images/header.jpeg" alt="Running Header" title="Running Header">
+	<h1>Matching Activity 1</h1>
+
 	<div id="main-content">
-		<!--  This is the new code for the audio and captions that will be placed in the nav cell.
-	Input your proper link titles and captions that fit your module. Your original nav code is
-	below this. 
-		<div id="menu">
-			<h2>Navigation</h2>
-			<a href="page1.html">1 - Title</a><br>
-			<a href="page2.html">2 - Objectives</a><br>
-			<a href="page3.html">3 - Examples</a><br>
-			<a href="page4.html">4 - How To Do It</a><br>
-			<a href="page5.html">5 - Hot Spot Activity</a><br>
-			<a href="page6.html">6 - Matching Activity 1</a><br>
-			<a href="page8.html">7 - Matching Activity 2</a><br>
-			<a href="page9.html" id="quiz-link">8 - Quiz</a><br>
-			<a href="page10.html">9 - Certificate</a><br>
-			<a href="page11.html">10 - References</a><br>
-			
-		<div id="audio">
-			<header>
-			<p id="audio-title">Audio</p>
-			</header>
-			<p>audio goes here</p>
-		</div>
 		
-		<p id="caption-title">Captions</p>
-		<div id="caption">
-			Captions here 
-		</div>
-		
-		</div>
-	-->
 		<div id="menu">
 			<h2>Navigation</h2>
 			<a href="page1.html">Title</a><br>
@@ -55,13 +29,70 @@
 			<a href="page9.html">Quiz: Multiplication</a><br>
 			<a href="page10.html">Certificate</a><br>
 			<a href="page11.html">References</a><br>
-		</div>
-	
-		<div id="main-info">
-			<img src="images/p7.jpg" alt="Page 7 Wireframe" title="Page 7 Wireframe">
-
+		
+		<div id="audio">
+			<header>
+			<p id="audio-title">Audio</p>
+			</header>
+			<p>audio goes here</p>
 		</div>
 		
+		<p id="caption-title">Captions</p>
+		<div id="caption">
+					<p>Find the matching equivalent fractions with the images on your right.</p>
+		</div>
+		
+		</div>
+	
+		
+		<div class="content">
+			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				<div class="column">
+						<h3>Number Sentence</h3>
+					 	<div id="d1" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><img src="images/d1.jpeg" alt="Dragger 1" title="Dragger 1"></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><img src="images/d3.jpeg" alt="Dragger 2" title="Dragger 2"></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><img src="images/d5.jpeg" alt="Dragger 3" title="Dragger 3"></div><br/>  
+						<div id="d3" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><img src="images/d7.jpeg" alt="Dragger 4" title="Dragger 3"></div><br/>  
+
+				</div>
+				
+				    
+				<div class="column">
+						<h3>Difference</h3>
+				     	<div id="db1" value="0" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/d2.jpeg" alt="Bay 2" title="Bay2"></div><br/>                        
+				 		<div id="db2" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/d4.jpeg" alt="Bay 1" title="Bay1"></div><br/>  
+					 	<div id="db3" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/d6.jpeg" alt="Bay 3" title="Bay3"></div><br/> 
+						<div id="db3" value="3" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/d8.jpeg" alt="Bay 4" title="Bay3"></div><br/> 
+ 
+				</div>
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
+
+		</div>
 	</div>
+		<div id="footer">
+			<h2>Additional Resources</h2>
+		</div>
 	</body>
 </html>

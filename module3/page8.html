@@ -4,44 +4,17 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body>
+	<body onload="javascript:parent.visitPage8()">
 	
-	<h1>Multiplying and Dividing Fractions</h1>
-	
+	<img src="images/header.jpeg" alt="Running Header" title="Running Header">
+	<h1>Matching Activity 2</h1>
+
 	<div id="main-content">
-		<!--  This is the new code for the audio and captions that will be placed in the nav cell.
-	Input your proper link titles and captions that fit your module. Your original nav code is
-	below this. 
-		<div id="menu">
-			<h2>Navigation</h2>
-			<a href="page1.html">1 - Title</a><br>
-			<a href="page2.html">2 - Objectives</a><br>
-			<a href="page3.html">3 - Examples</a><br>
-			<a href="page4.html">4 - How To Do It</a><br>
-			<a href="page5.html">5 - Hot Spot Activity</a><br>
-			<a href="page6.html">6 - Matching Activity 1</a><br>
-			<a href="page8.html">7 - Matching Activity 2</a><br>
-			<a href="page9.html" id="quiz-link">8 - Quiz</a><br>
-			<a href="page10.html">9 - Certificate</a><br>
-			<a href="page11.html">10 - References</a><br>
-			
-		<div id="audio">
-			<header>
-			<p id="audio-title">Audio</p>
-			</header>
-			<p>audio goes here</p>
-		</div>
 		
-		<p id="caption-title">Captions</p>
-		<div id="caption">
-			Captions here 
-		</div>
-		
-		</div>
-	-->
 		<div id="menu">
 			<h2>Navigation</h2>
 			<a href="page1.html">Title</a><br>
@@ -55,13 +28,67 @@
 			<a href="page9.html">Quiz: Multiplication</a><br>
 			<a href="page10.html">Certificate</a><br>
 			<a href="page11.html">References</a><br>
-		</div>
-	
-		<div id="main-info">
-			<img src="images/p8.jpg" alt="Page 8 Wireframe" title="Page 8 Wireframe">
-
+		
+		<div id="audio">
+			<header>
+			<p id="audio-title">Audio</p>
+			</header>
+			<p>audio goes here</p>
 		</div>
 		
+		<p id="caption-title">Captions</p>
+		<div id="caption">
+			<p>Solve each problem on another sheet of paper or whiteboard using the four step process 
+			“MEPS” then drag the problem to the correct answer.</p>  
+			<p>**Hint: Pay attention to the operation; are you multiplying or dividing?</p> 
+		</div>
+		
+		</div>
+	
+		
+		<div class="content">
+			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				<p>Directions: Solve each problem on another sheet of paper or whiteboard using the four step process 
+				“MEPS” then drag the problem to the correct answer.</p>  
+				<p>**Hint: Pay attention to the operation; are you multiplying or dividing?</p>
+				
+				<div class="column">
+						<h3>Word Problem</h3>
+					 	<div id="d1" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Timothy is having a pizza party for his birthday. If he's having 19 friends over and each eat 3/8 of a pizza, how many pizzas should he buy for his party?</p>></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Shezar is buying the ice-cream for Timothy's party. He wants to buy enough ice-cream for all 20 guests so that each guest can have 3/4 of a pint. How many pints should he buy?</p></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Jean was bringing chips and salsa to Timothy's party. She made 3/4 gallons of salsa. She split it into 6 different bowls for the tables. How many gallons were on each table?</p></div><br/>  
+					</div>
+				
+				    
+				<div class="column">
+						<h3>Answer</h3>
+				     	<div id="db1" value="0" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/r1.jpeg" alt="Bay 2" title="Bay 2"></div><br/>                        
+				 		<div id="db2" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/r2.jpeg" alt="Bay 2" title="Bay 2"></div><br/>  
+					 	<div id="db3" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/r3.jpeg" alt="Bay 3" title="Bay 3"></div><br/> 
+					 	</div>
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
+
+		</div>
 	</div>
+		<div id="footer">
+			<h2>Additional Resources</h2>
+		</div>
 	</body>
 </html>
