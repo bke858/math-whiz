@@ -3,36 +3,107 @@ body
 	margin: 0px;
 	padding: 5px;
 	font-size: 12px;
-	font-family: Arial;
+	font-family: Verdana;
 	width: 900px; 
 }
 
 h1
 {
-	
+	font-family: Verdana;
 	text-align: center; 
 	border: solid;
+	text-decoration-color: #ff751a;
 }
-
-	
+h2
+{
+	font-family: Verdana;
+	text-align: Left; 
+	text-decoration-color: #ff751a;
+}
+h3
+{
+	text-align: center;
+	text-decoration-color: #ff751a;
+}
+p
+{
+	color: #000066;
+	font-size: 15px; 
+	text-align: center;
+}
 #main-layout
 {
 	display: table;
 }
-			
-
+#current-page
+{
+	font-weight: bold;
+	font-size: 15px;
+	color: #000066;
+	text-decoration: underline;
+}			
+#audio-title
+{
+	font-weight: bold; 
+	font-size: 15px;
+	color: #000066;
+	text-align: left; 
+}
+.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+#nav
+{
+	
+	Font-size:25px;
+	color: #000066;
+}
+.title
+{
+	color:#000066;
+}
+#caption-title
+{
+	font-weight: bold; 
+	font-size: 15px;
+	color: #000066;
+	text-align: left; 
+}
+#caption
+{
+	color:#000066;
+}
 #menu
 {
+	
 	display: table-cell; 
 	width: 200px;
     margin; auto;
 	height: 400px; 
 	margin: 10px; 
-	vertical-align: top;   
+	vertical-align: top;  
+	background:  #e6f5ff;
 }
-
-
-
+a:link
+{
+	color: #000066; 
+	cursor: auto;
+}
+a:visited
+{
+	color: #ff751a;
+	text-decoration: underline; 
+	cursor: auto;
+}
+a:visited:active
+{
+	color: #ff751a;
+	text-decoration: underline; 
+	cursor: auto;
+}
 
 #matching
 {
@@ -58,9 +129,9 @@ h1
 
 .objectives
 {
-	font-family: arial;
+	font-family: Tahoma;
 	font-size: 20px;
-	color: #000000;
+	color: #000066;
 }
 
 #footer
@@ -129,7 +200,7 @@ h1
 	
 #transcript
 {
-	color: green;
+	color: #000066;
 	font-size: 12px;
 	overflow: auto;
 	height: 321px;
