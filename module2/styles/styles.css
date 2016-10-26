@@ -56,6 +56,32 @@ h1
 	text-align: center; 
 }
 
+#audio-title
+{
+	background: #ffe02e;
+	width: 180px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+
+#caption-title
+{
+	background: #ffe02e;
+	width: 180px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+
+#caption
+{
+	color: black;
+	overflow: auto;
+
+	width: 180px;
+}
+
 /*#quiz-link
 {
 	display: none; 
