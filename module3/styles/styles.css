@@ -4,34 +4,92 @@ body
 	padding: 5px;
 	font-size: 12px;
 	font-family: Arial;
+	width: 900px; 
+}
+
+td
+{
+	padding: 2px; 
+	 
 }
 
 h1
 {
+	
 	text-align: center; 
 	border: solid;
 }
 
 #menu
 {
-	float: left; 
-	width: 200px; 
-	border: solid; 
+	display: table-cell; 
+	width: 200px;
+	height: 400px; 
+	margin: 10px;  
+	vertical-align: top; 
 }
 
-#main-info
-{
-	float: left;
-	width: 630px; 
-	border: solid; 
-}
 
 #main-content
-{
-	height: 600px;
+{ 
 	padding: 10px;
 	margin: 10px; 
+	display: table; 
+
+}
+
+#matching
+{
+	float: left; 
+}
+
+.content
+{
+	
+	padding: 10px; 
+	display: table-cell; 
+}
+
+#footer
+{
 	border: solid; 
+	text-align: center; 
+}
+
+#audio-title
+{
+	background: #ffe02e;
+	width: 180px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+
+#caption-title
+{
+	background: #ffe02e;
+	width: 180px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+
+#caption
+{
+	color: black;
+	overflow: auto;
+
+	width: 180px;
+}
+
+/*#quiz-link
+{
+	display: none; 
+}*/
+
+#certificate-link
+{
+	display: none; 
 }
 
 /*#main-info
