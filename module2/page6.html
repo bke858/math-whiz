@@ -2,32 +2,33 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>Page title here</title>
+		<title>Add and Subtract Fractions with Unlike Denominators</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
 		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body onload="javascript:parent.visitPage6()">
 	
 	<img src="images/unlike-header.png" alt="Running Header" title="Running Header">
-	<h1>Matching Activity 1</h1>
 
-	<div id="main-content">
+	<div id="main-layout">
 		
 		<div id="menu">
-			<h2>Navigation</h2>
+			<h2 id = "nav">Navigation</h2>
 			<a href="page1.html">1 - Title</a><br>
 			<a href="page2.html">2 - Objectives</a><br>
 			<a href="page3.html">3 - Examples</a><br>
 			<a href="page4.html">4 - How To Do It</a><br>
 			<a href="page5.html">5 - Hot Spot Activity</a><br>
-			<a href="page6.html">6 - Matching Activity 1</a><br>
+			<a href="page6.html"id="current-page">--->>>6 - Matching Activity 1</a><br>
 			<a href="page8.html">7 - Matching Activity 2</a><br>
 			<a href="page9.html" id="quiz-link">8 - Quiz</a><br>
 			<a href="page10.html">9 - Certificate</a><br>
-			<a href="page11.html">10 - References</a><br>
+			<a href="page11.html">10 - References</a><br/><br/>
 			
 		<div id="audio">
 			<header>
@@ -44,14 +45,15 @@
 		
 		</div>
 	
+		<h1 class="title">Matching Activity 1</h1>
 		
-		<div class="content">
+		
 			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
 				<p>Directions: Visit this website to review equivalent fractions: <a href="http://studyjams.scholastic.com/studyjams/jams/math/fractions/equiv-fractions.htm">Study Jams</a></p> 
 				<p>Find the matching equivalent fractions that use the common denominator.</p>
 				
 				<div class="column">
-						<h3>Number Sentence</h3>
+						<h3 class="subtitle">Equation</h3>
 					 	<div id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
 				     		ondragend="return endDrag( event )"><img src="images/p6-dragger1.png" alt="Dragger 1" title="Dragger 1"></div><br/>  
@@ -66,7 +68,7 @@
 				
 				    
 				<div class="column">
-						<h3>Difference</h3>
+						<h3 class="subtitle">Difference</h3>
 				     	<div id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
@@ -86,9 +88,7 @@
 				</form>
 
 		</div>
-	</div>
-		<div id="footer">
-			<h2>Additional Resources</h2>
-		</div>
+	
+		
 	</body>
 </html>
