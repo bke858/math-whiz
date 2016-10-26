@@ -118,11 +118,13 @@ a:visited:active
 	text-align: center;
 }
 
-.content2
+#content2
 {
 	border: solid;
 	padding: 10px;
 	display: table-cell;
+	width: 150px;
+	height: 75px;
 }
 
 .objectives
