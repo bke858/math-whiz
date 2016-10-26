@@ -6,20 +6,44 @@ body
 	font-family: Arial;
 	width: 900px; 
 }
+h1
+{
+	font-family: Verdana;
+	text-align: center; 
+	border: solid;
 
+}
+.subtitle
+{
+	color: #b30059;
+}
+h2
+{
+	font-family: Verdana;
+	text-align: Left; 
+
+}
+h3
+{
+	text-align: center;
+	
+}
+p
+{
+	color: #330066;
+	font-size: 15px; 
+	text-align: center;
+}
 td
 {
 	padding: 2px; 
 	 
 }
 
-h1
+#main-layout
 {
-	
-	text-align: center; 
-	border: solid;
+	display: table;
 }
-
 #menu
 {
 	display: table-cell; 
@@ -27,8 +51,66 @@ h1
 	height: 400px; 
 	margin: 10px;  
 	vertical-align: top; 
+	background:#f2e6ff;
 }
-
+a:link
+{
+	color: #330066; 
+	cursor: auto;
+}
+a:visited
+{
+	color: #330066;
+	text-decoration: underline; 
+	cursor: auto;
+}
+a:visited:active
+{
+	color: #b30059;
+	text-decoration: underline; 
+	cursor: auto;
+}
+#current-page
+{
+	font-weight: bold;
+	font-size: 15px;
+	color: #b30059;
+	text-decoration: underline;
+}			
+#audio-title
+{
+	font-weight: bold; 
+	font-size: 15px;
+	color: #330066;
+	text-align: left; 
+}
+.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+#nav
+{
+	
+	Font-size:25px;
+	color: #330066;
+}
+.title
+{
+	color:#330066;
+}
+#caption-title
+{
+	font-weight: bold; 
+	font-size: 15px;
+	color: #330066;
+	text-align: left; 
+}
+#caption
+{
+	color:#330066;
+}
 
 #main-content
 { 
@@ -56,23 +138,9 @@ h1
 	text-align: center; 
 }
 
-#audio-title
-{
-	background: #ffe02e;
-	width: 180px;
-	font-weight: bold;
-	color: black;
-	padding: 5px;
-}
 
-#caption-title
-{
-	background: #ffe02e;
-	width: 180px;
-	font-weight: bold;
-	color: black;
-	padding: 5px;
-}
+
+
 
 #caption
 {
