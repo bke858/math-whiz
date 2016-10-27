@@ -24,11 +24,7 @@
 
 #output-box
 {
-	border: dashed thin #000000;
-	height: 100px;
-	width: 650px;
 	text-align: center;
-	background: #ccccee;
 	
 	display: none;
 }
