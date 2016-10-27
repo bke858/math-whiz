@@ -154,7 +154,10 @@ a:visited:active
 	text-align: center; 
 }
 
-
+#main-content
+{
+	margin: 10px; 
+}
 
 /*#main-info
 {
