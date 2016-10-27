@@ -9,76 +9,87 @@ body
 
 h1
 {
-	font-family: Verdana;
 	text-align: center; 
-	border: solid;
 	text-decoration-color: #ff751a;
 }
 h2
 {
-	font-family: Verdana;
-	text-align: Left; 
+	text-align: left; 
 	text-decoration-color: #ff751a;
 }
+
 h3
 {
 	text-align: center;
 	text-decoration-color: #ff751a;
 }
+
 p
 {
 	color: #000066;
 	font-size: 15px; 
 	text-align: center;
 }
+
 #main-layout
 {
 	display: table;
 }
+
 #current-page
 {
 	font-weight: bold;
 	font-size: 15px;
 	color: #000066;
 	text-decoration: underline;
-}			
+}
+
+.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+#nav
+{
+	
+	font-size:20px;
+	color: #000066;
+}
+
+.title
+{
+	color:#000066;
+}
+			
 #audio-title
 {
 	font-weight: bold; 
 	font-size: 15px;
 	color: #000066;
 	text-align: left; 
+	background: #177ab5;
+	padding: 5px; 
 }
-.displayed 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-#nav
-{
-	
-	Font-size:25px;
-	color: #000066;
-}
-.title
-{
-	color:#000066;
-}
+
 #caption-title
 {
 	font-weight: bold; 
 	font-size: 15px;
 	color: #000066;
 	text-align: left; 
+	background: #177ab5;
+	padding: 5px;  
 }
+
 #caption
 {
 	color:#000066;
 }
+
 #menu
 {
-	
 	display: table-cell; 
 	width: 200px;
     margin; auto;
@@ -87,17 +98,20 @@ p
 	vertical-align: top;  
 	background:  #e6f5ff;
 }
+
 a:link
 {
 	color: #000066; 
 	cursor: auto;
 }
+
 a:visited
 {
 	color: #ff751a;
 	text-decoration: underline; 
 	cursor: auto;
 }
+
 a:visited:active
 {
 	color: #ff751a;
