@@ -16,13 +16,17 @@ td
 h1
 {
 	text-align: center;  
-	
 	color:#737373;
 }
 
 #main-layout
 {
 	display: table;
+}
+
+#main-content
+{
+	text-align: center; 
 }
 
 #current-page
