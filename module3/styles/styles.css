@@ -4,160 +4,34 @@ body
 	padding: 5px;
 	font-size: 12px;
 	font-family: Arial;
-	width: 900px; 
 }
+
 h1
 {
-	font-family: Verdana;
 	text-align: center; 
 	border: solid;
-
-}
-.subtitle
-{
-	color: #b30059;
-}
-h2
-{
-	font-family: Verdana;
-	text-align: Left; 
-
-}
-h3
-{
-	text-align: center;
-	
-}
-p
-{
-	color: #330066;
-	font-size: 15px; 
-	text-align: center;
-}
-td
-{
-	padding: 2px; 
-	 
 }
 
-#main-layout
-{
-	display: table;
-}
 #menu
 {
-	display: table-cell; 
-	width: 200px;
-	height: 400px; 
-	margin: 10px;  
-	vertical-align: top; 
-	background:#f2e6ff;
+	float: left; 
+	width: 200px; 
+	border: solid; 
 }
-a:link
+
+#main-info
 {
-	color: #330066; 
-	cursor: auto;
-}
-a:visited
-{
-	color: #330066;
-	text-decoration: underline; 
-	cursor: auto;
-}
-a:visited:active
-{
-	color: #b30059;
-	text-decoration: underline; 
-	cursor: auto;
-}
-#current-page
-{
-	font-weight: bold;
-	font-size: 15px;
-	color: #b30059;
-	text-decoration: underline;
-}			
-#audio-title
-{
-	font-weight: bold; 
-	font-size: 15px;
-	color: #330066;
-	text-align: left; 
-}
-.displayed 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-#nav
-{
-	
-	Font-size:25px;
-	color: #330066;
-}
-.title
-{
-	color:#330066;
-}
-#caption-title
-{
-	font-weight: bold; 
-	font-size: 15px;
-	color: #330066;
-	text-align: left; 
-}
-#caption
-{
-	color:#330066;
+	float: left;
+	width: 630px; 
+	border: solid; 
 }
 
 #main-content
-{ 
+{
+	height: 600px;
 	padding: 10px;
 	margin: 10px; 
-	display: table; 
-
-}
-
-#matching
-{
-	float: left; 
-}
-
-.content
-{
-	
-	padding: 10px; 
-	display: table-cell; 
-}
-
-#footer
-{
 	border: solid; 
-	text-align: center; 
-}
-
-
-
-
-
-#caption
-{
-	color: black;
-	overflow: auto;
-
-	width: 180px;
-}
-
-/*#quiz-link
-{
-	display: none; 
-}*/
-
-#certificate-link
-{
-	display: none; 
 }
 
 /*#main-info
