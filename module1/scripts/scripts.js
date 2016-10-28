@@ -1,3 +1,5 @@
+
+
 // this file holds any scripts that have to do with communicating with the learning management system (LMS)
 
 // define a SCORM object to interface with LMS
@@ -26,6 +28,16 @@ function startCourse()
     		sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+    		sessionStorage.setItem("visitPage1", "visited");
+    		sessionStorage.setItem("visitPage2", "unvisited");
+    		sessionStorage.setItem("visitPage3", "unvisited");
+    		sessionStorage.setItem("visitPage4", "unvisited");
+    		sessionStorage.setItem("visitPage5", "unvisited");
+    		sessionStorage.setItem("visitPage6", "unvisited");
+    		sessionStorage.setItem("visitPage7", "unvisited");
+    		sessionStorage.setItem("visitPage8", "unvisited");
+    		sessionStorage.setItem("visitPage9", "unvisited");
+    		//sessionStorage.setItem("visitPage10", "unvisited");
         }
 	}
 	
@@ -78,3 +90,88 @@ function finishCourse()
 	oScorm.save();
 	oScorm.quit();
 }
+
+//Check to see if all pages have been visited
+function checkAllVisited()
+{
+	var page1 = sessionStorage.getItem("visitPage1");
+	var page2 = sessionStorage.getItem("visitPage2");
+	var page3 = sessionStorage.getItem("visitPage3");
+	var page4 = sessionStorage.getItem("visitPage4");
+	var page5 = sessionStorage.getItem("visitPage5");
+	var page6 = sessionStorage.getItem("visitPage6");
+	var page7 = sessionStorage.getItem("visitPage7");
+	var page8 = sessionStorage.getItem("visitPage8");
+	var page9 = sessionStorage.getItem("visitPage9");
+	//var page10 = sessionStorage.getItem("visitPage10");
+	//alert (page2);
+	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited" && page9 == "visited")
+		{
+		// place all on the same line
+		document.getElementById( "content-frame" ).
+		contentWindow.document.getElementById( "quiz-link" ).
+		style.display = "inline";
+		}
+
+}
+
+function visitPage1()
+{
+	sessionStorage.setItem("visitPage1", "visited");
+	checkAllVisited();
+}
+
+function visitPage2()
+{
+	sessionStorage.setItem("visitPage2", "visited");
+	checkAllVisited();
+}
+
+function visitPage3()
+{
+	sessionStorage.setItem("visitPage3", "visited");
+	checkAllVisited();
+}
+
+function visitPage4()
+{
+	sessionStorage.setItem("visitPage4", "visited");
+	checkAllVisited();
+}
+
+function visitPage5()
+{
+	sessionStorage.setItem("visitPage5", "visited");
+	checkAllVisited();
+}
+
+function visitPage6()
+{
+	sessionStorage.setItem("visitPage6", "visited");
+	checkAllVisited();
+}
+
+function visitPage7()
+{
+	sessionStorage.setItem("visitPage7", "visited");
+	checkAllVisited();
+}
+
+function visitPage8()
+{
+	sessionStorage.setItem("visitPage8", "visited");
+	checkAllVisited();
+}
+
+function visitPage9()
+{
+	sessionStorage.setItem("visitPage9", "visited");
+	checkAllVisited();
+}
+
+//function visitPage10()
+//{
+	//sessionStorage.setItem("visitPage10", "visited");
+	//checkAllVisited();
+//}
+
