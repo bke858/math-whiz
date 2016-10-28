@@ -1,17 +1,71 @@
+/*web layout styles*/
+
 body
 {
 	margin: 0px;
 	padding: 5px;
-	font-size: 12px;
+	font-size: 15px;
 	font-family: Verdana;
 	width: 900px; 
 }
+
+#main-layout
+{
+	display: table;
+}
+
+#main-content
+{
+	margin: 10px; 
+}
+
+.content
+{
+	border: solid;
+	padding: 10px; 
+	display: table-cell; 
+	text-align: center;
+}
+
+#content2
+{
+	border: solid;
+	padding: 10px;
+	display: table-cell;
+	width: 150px;
+	height: 75px;
+}
+
+#footer
+{
+	border: solid; 
+	text-align: center; 
+}
+
+p
+{
+	color: #000066;
+	font-size: 15px; 
+}
+
+.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*title styles*/
 
 h1
 {
 	text-align: center; 
 	text-decoration-color: #ff751a;
 }
+
 h2
 {
 	text-align: left; 
@@ -24,16 +78,32 @@ h3
 	text-decoration-color: #ff751a;
 }
 
-p
+.title
 {
-	color: #000066;
-	font-size: 15px; 
-	text-align: center;
+	color:#000066;
 }
 
-#main-layout
+
+
+
+/*nav styles*/ 
+
+#menu
 {
-	display: table;
+	display: table-cell; 
+	width: 200px;
+    margin: auto;
+	height: 400px; 
+	margin: 10px; 
+	vertical-align: top;  
+	background:  #e6f5ff;
+}
+ 
+#nav
+{
+	
+	font-size:20px;
+	color: #000066;
 }
 
 #current-page
@@ -44,24 +114,30 @@ p
 	text-decoration: underline;
 }
 
-.displayed 
+a:link
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
- 
-#nav
-{
-	
-	font-size:20px;
-	color: #000066;
+	color: #000066; 
+	cursor: auto;
 }
 
-.title
+a:visited
 {
-	color:#000066;
+	color: #ff751a;
+	text-decoration: underline; 
+	cursor: auto;
 }
+
+a:visited:active
+{
+	color: #ff751a;
+	text-decoration: underline; 
+	cursor: auto;
+}
+
+
+
+
+/*audio and caption styles*/
 			
 #audio-title
 {
@@ -88,76 +164,10 @@ p
 	color:#000066;
 }
 
-#menu
-{
-	display: table-cell; 
-	width: 200px;
-    margin; auto;
-	height: 400px; 
-	margin: 10px; 
-	vertical-align: top;  
-	background:  #e6f5ff;
-}
 
-a:link
-{
-	color: #000066; 
-	cursor: auto;
-}
 
-a:visited
-{
-	color: #ff751a;
-	text-decoration: underline; 
-	cursor: auto;
-}
 
-a:visited:active
-{
-	color: #ff751a;
-	text-decoration: underline; 
-	cursor: auto;
-}
 
-#matching
-{
-	float: left; 
-}
-
-.content
-{
-	border: solid;
-	padding: 10px; 
-	display: table-cell; 
-	text-align: center;
-}
-
-#content2
-{
-	border: solid;
-	padding: 10px;
-	display: table-cell;
-	width: 150px;
-	height: 75px;
-}
-
-.objectives
-{
-	font-family: Tahoma;
-	font-size: 20px;
-	color: #000066;
-}
-
-#footer
-{
-	border: solid; 
-	text-align: center; 
-}
-
-#main-content
-{
-	margin: 10px; 
-}
 
 /*#main-info
 {
