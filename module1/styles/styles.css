@@ -134,6 +134,16 @@ a:visited:active
 	cursor: auto;
 }
 
+#quiz-link
+{
+	display: none; 
+}
+
+#certificate-link
+{
+	display: none; 
+}
+
 
 
 
