@@ -18,7 +18,7 @@ function processForm()
 	
 	var q3 = document.forms.quiz1.question3;
 	
-	if (q3[0].checked)
+	if (q3[2].checked)
 		{
 		numberOfCorrectResponses= numberOfCorrectResponses + 1;
 		}

@@ -9,9 +9,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body onload="javascript:parent.visitPage6()">
+	<body onload="javascript:parent.visitPage8()">
 	
 	<img src="images/unlike-header.png" alt="Running Header" title="Running Header">
 
@@ -24,11 +23,12 @@
 			<a href="page3.html">3 - Examples</a><br>
 			<a href="page4.html">4 - How To Do It</a><br>
 			<a href="page5.html">5 - Hot Spot Activity</a><br>
-			<a href="page6.html"id="current-page">--> 6 - Matching Activity 1</a><br>
-			<a href="page7.html">7- Matching Activity 2</a><br>
+			<a href="page6.html">6 - Matching Activity 1</a><br>
+			<a href="page7.html"id="current-page">--> 7 - Matching Activity 2</a><br>
 			<a href="page8.html">8 - References</a><br>
 			<a href="page9.html" id="quiz-link">9 - Quiz</a><br>
 			<a href="page10.html">10 - Certificate</a><br>
+			
 			
 		<div id="audio">
 			<header>
@@ -39,56 +39,63 @@
 		
 		<p id="caption-title">Captions</p>
 		<div id="caption">
-			<p>For this activity, visit this website to review equivalent fractions: <a href="http://studyjams.scholastic.com/studyjams/jams/math/fractions/equiv-fractions.htm">Study Jams</a></p> 
-			<p>Find the matching equivalent fractions that use the common denominator.</p>
+			<p>Solve each problem on another sheet of paper or whiteboard using the four step process 
+			“MEPS” then drag the problem to the correct answer.</p>  
+			<p>**Hint: Pay attention to the operation; are you adding or subtracting?</p> 
 		</div>
 		
 		</div>
 	
-		<div id="main-content">
-		<h1 class="title">Matching Activity 1</h1>
-		
+			<div id="main-content">
+			<h1 class="title">Matching Activity 2</h1>
+	
 			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<p>Directions: Visit this website to review equivalent fractions: <a href="http://studyjams.scholastic.com/studyjams/jams/math/fractions/equiv-fractions.htm">Study Jams</a></p> 
-				<p>Find the matching equivalent fractions that use the common denominator.</p>
+				<p>Directions: Solve each problem on another sheet of paper or whiteboard using the four step process 
+				“MEPS” then drag the problem to the correct answer.</p>  
+				<p>**Hint: Pay attention to the operation; are you adding or subtracting?</p>
 				
 				<div class="column">
 						<h3 class="subtitle">Equation</h3>
 					 	<div id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p6-dragger1.png" alt="Dragger 1" title="Dragger 1"></div><br/>  
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger1.png" alt="Dragger 1" title="Dragger 1"></div><br/>  
 				     	<div id="d2" value="2" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p6-dragger2.png" alt="Dragger 2" title="Dragger 2"></div><br/>                        
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger2.png" alt="Dragger 2" title="Dragger 2"></div><br/>                        
 				 		<div id="d3" value="0" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p6-dragger3.png" alt="Dragger 3" title="Dragger 3"></div><br/>  
-
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger3.png" alt="Dragger 3" title="Dragger 3"></div><br/>  
+					 	<div id="d4" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><img src="images/p8-dragger4.png" alt="Dragger 4" title="Dragger 4"></div><br/>  
 				</div>
 				
 				    
 				<div class="column">
-						<h3 class="subtitle">Difference</h3>
+						<h3 class="subtitle">Answer</h3>
 				     	<div id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p6-bay2.png" alt="Bay 2" title="Bay2"></div><br/>                        
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay1.png" alt="Bay 1" title="Bay 1"></div><br/>                        
 				 		<div id="db2" value="1" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p6-bay1.png" alt="Bay 1" title="Bay1"></div><br/>  
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay2.png" alt="Bay 2" title="Bay 2"></div><br/>  
 					 	<div id="db3" value="2" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p6-bay3.png" alt="Bay 3" title="Bay3"></div><br/> 
- 
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay3.png" alt="Bay 3" title="Bay 3"></div><br/> 
+					 	<div id="db4" value="3" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay4.png" alt="Bay 4" title="Bay 4"></div><br/>  
 				</div>
 				<p id="response">&nbsp;</p>
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
 				</form>
 		</div>
 		</div>
-	
+
 		
 	</body>
 </html>
