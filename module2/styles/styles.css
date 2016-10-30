@@ -1,3 +1,5 @@
+
+/*web layout styles*/
 body
 {
 	margin: 0px;
@@ -5,18 +7,6 @@ body
 	font-size: 15px;
 	font-family: Verdana;
 	width: 900px; 
-}
-
-td
-{
-	padding: 2px; 
-	 
-}
-
-h1
-{
-	text-align: center;  
-	color:#737373;
 }
 
 #main-layout
@@ -29,13 +19,51 @@ h1
 	margin: 15px; 	  
 }
 
-#current-page
-{
-	font-weight: bold;
-	font-size: 15px;
-	color: #737373;
-	text-decoration: underline;
+.content
+{ 
+	padding: 10px;
+	margin: 10px; 
+	display: table-cell; 
+	text-align: center; 
 }
+
+#footer
+{
+	border: solid; 
+	text-align: center; 
+}
+
+.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td
+{
+	padding: 2px; 
+	 
+}
+
+
+
+/*title styles*/
+h1
+{
+	text-align: center;  
+	color:#737373;
+}
+
+.subtitle
+{
+	color: #47d147;
+}
+
+
+
+
+/*nav styles*/
 
 #menu
 {
@@ -45,6 +73,14 @@ h1
 	margin: 10px;  
 	vertical-align: top; 
 	background: #f2f2f2;
+}
+
+#current-page
+{
+	font-weight: bold;
+	font-size: 15px;
+	color: #737373;
+	text-decoration: underline;
 }
 
 #audio-title
@@ -57,26 +93,6 @@ h1
 	padding: 5px;
 }
 
-#nav
-{
-	
-	font-size:20px;
-	color: #737373;
-}
-
-.content
-{ 
-	padding: 10px;
-	margin: 10px; 
-	display: table; 
-	text-align: center; 
-}
-
-.subtitle
-{
-	color: #47d147;
-}
-
 #caption-title
 {
 	font-weight: bold; 
@@ -87,12 +103,11 @@ h1
 	padding: 5px;
 }
 
-.displayed 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
+#nav
+{	
+	font-size:20px;
+	color: #737373;
+}
  
 #caption
 {
@@ -113,35 +128,20 @@ a:visited
 	cursor: auto;
 }
 
-#matching
+#quiz-link
 {
-	float: left; 
+	display: none; 
 }
 
-.content
-{
-	border: solid;
-	padding: 10px; 
-	display: table-cell; 
-	text-align: center;
-	margin: 10px; 
-}
-
-#footer
-{
-	border: solid; 
-	text-align: center; 
-}
-
-/*#quiz-link
+/*#certificate-link
 {
 	display: none; 
 }*/
 
-#certificate-link
-{
-	display: none; 
-}
+
+
+
+
 
 /*#main-info
 {
