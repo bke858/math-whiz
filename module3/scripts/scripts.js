@@ -36,6 +36,7 @@ function startCourse()
     		sessionStorage.setItem("visitPage6", "unvisited");
     		sessionStorage.setItem("visitPage7", "unvisited");
     		sessionStorage.setItem("visitPage8", "unvisited");
+    		sessionStorage.setItem("visitPage9", "unvisited");
         }
 	}
 	
@@ -100,9 +101,10 @@ function checkAllVisited()
 	var page6 = sessionStorage.getItem("visitPage6");
 	var page7 = sessionStorage.getItem("visitPage7");
 	var page8 = sessionStorage.getItem("visitPage8");
+	var page9 = sessionStorage.getItem("visitPage9");
 
 	//alert (page3);
-	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited")
+	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited" && page9 == "visited")
 		{
 		// place all on the same line
 		document.getElementById( "content-frame" ).
@@ -160,4 +162,8 @@ function visitPage8()
 	checkAllVisited();
 }
 
-
+function visitPage9()
+{
+	sessionStorage.setItem("visitPage9", "visited");
+	checkAllVisited();
+}
