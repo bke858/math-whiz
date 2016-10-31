@@ -7,6 +7,7 @@
 		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
 		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="scripts/slideshow.js" lang="javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 	</head>	
@@ -39,60 +40,37 @@
 		
 		<p id="caption-title">Captions</p>
 		<div id="caption">
-			<p>Solve each problem on another sheet of paper or whiteboard using the four step process 
-			“MEPS” then drag the problem to the correct answer.</p>  
-			<p>**Hint: Pay attention to the operation; are you adding or subtracting?</p> 
+			<p>Directions: Work out the following equations in the slideshow on a piece of paper or whiteboard. 
+			You can check your answer by clicking the next button.</p>
 		</div>
 		
 		</div>
 	
 			<div id="main-content">
 			<h1 class="title">Matching Activity 2</h1>
-	
-			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<p>Directions: Solve each problem on another sheet of paper or whiteboard using the four step process 
-				“MEPS” then drag the problem to the correct answer.</p>  
-				<p>**Hint: Pay attention to the operation; are you adding or subtracting?</p>
-				
-				<div class="column">
-						<h3 class="subtitle">Equation</h3>
-					 	<div id="d1" value="3" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p8-dragger1.png" alt="Dragger 1" title="Dragger 1"></div><br/>  
-				     	<div id="d2" value="2" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p8-dragger2.png" alt="Dragger 2" title="Dragger 2"></div><br/>                        
-				 		<div id="d3" value="0" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p8-dragger3.png" alt="Dragger 3" title="Dragger 3"></div><br/>  
-					 	<div id="d4" value="1" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/p8-dragger4.png" alt="Dragger 4" title="Dragger 4"></div><br/>  
+			<p>Directions: Work out the following equations in the slideshow on a piece of paper or whiteboard. 
+			You can check your answer by clicking the next button.</p>
+			
+				<div id="slideshow">
+					<h2 class="subtitle" id="slideshow-title">Equation 1</h2>
+					
+					<img id="slideshow-image" 
+					src="images/p8-dragger1.png" alt="Equation 1" 
+					title="Equation 1"/>
+					<br>
+					<br>
+					<p id="description">
+					Solve this first equation on a whiteboard or sheet of paper. 
+					 Click next to view the answer. </p>
+					
+					<div class="sslink">
+					<a href="#" onclick="javascript:goBack()">Previous</a>
+					</div>
+					<div class="sslink">
+					<a href="#" onclick="javascript:goNext()">Next</a>
+					</div>
+					<br>
 				</div>
-				
-				    
-				<div class="column">
-						<h3 class="subtitle">Answer</h3>
-				     	<div id="db1" value="0" class="draggerbay" 
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay1.png" alt="Bay 1" title="Bay 1"></div><br/>                        
-				 		<div id="db2" value="1" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay2.png" alt="Bay 2" title="Bay 2"></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay3.png" alt="Bay 3" title="Bay 3"></div><br/> 
-					 	<div id="db4" value="3" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/p8-bay4.png" alt="Bay 4" title="Bay 4"></div><br/>  
-				</div>
-				<p id="response">&nbsp;</p>
-				<input type="submit" name="button" value="Submit Your Answer"/><br/>
-				</form>
 		</div>
 		</div>
 

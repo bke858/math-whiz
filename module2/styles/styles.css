@@ -46,6 +46,11 @@ td
 	 
 }
 
+#slideshow
+{
+	text-align: center; 
+}
+
 
 
 /*title styles*/
@@ -58,6 +63,12 @@ h1
 .subtitle
 {
 	color: #47d147;
+}
+
+.sslink
+{
+	display: inline; 
+	margin: 50px; 
 }
 
 
