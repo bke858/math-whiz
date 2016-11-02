@@ -78,7 +78,7 @@ function initializeSCORM()
 
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
-function reportScores()
+function reportScores( score )
 {	
 	oScorm.save();
 }
