@@ -26,39 +26,11 @@ function processForm()
 	var score= 	Math.round(numberOfCorrectResponses / 3 * 100);
 	alert( "You recieved a " + score + "!" );
 	
-	if (score >= 70)
-		{
-			document.getElementById( "content-frame" ).
-			contentWindow.document.getElementById( "certificate-link" ).
-			style.display = "inline";
-		}
 	
-	parent.reportScores( score );
-}
-
-function reportScores( score )
-{	
-	// remove this line, it's only for testing the score: you don't always
-	// want a score of 78
 
 	
-	oScorm.set("cmi.core.score.raw", score );
-	oScorm.set("cmi.core.score.min", 0 );
-	oScorm.set("cmi.core.score.max", 100 );
-
 	if (score >= 70)
 		{
-		oScorm.set( "cmi.core.lesson_status", "passed" );
-
+			parent.document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 		}
-	else
-		{
-		oScorm.set( "cmi.core.lesson_status", "failed" );
-
-		
-		}
-	alert( "Reported " + score + " as your score." );
-
-	oScorm.save();
 }
-
