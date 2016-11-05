@@ -72,9 +72,11 @@ function dropDragger( evt )
 		// take the slot and store the dragger's value into the array
 		var nDraggerIndex = evt.dataTransfer.getData( "sData" );
 		aDraggerBays[ nDraggerBayIndex ] = nDraggerIndex; 
-		
+	
 		// replace the HTML of the dragger bay with the dragger (the HTML)
-		evt.target.innerHTML = "<div class='dragger'>" + oCurrentDragger.innerHTML + "</div>";
+		evt.target.src =  oCurrentDragger.src;
+		evt.target.alt =  oCurrentDragger.alt;
+		evt.target.title =  oCurrentDragger.title;
 		
 		evt.target.style.border = "none";
 		oCurrentDragger.style.display = "none";
