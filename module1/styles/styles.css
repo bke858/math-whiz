@@ -55,6 +55,25 @@ p
     margin-right: auto;
 }
 
+.container
+{
+	position: relative; 
+	width: 600px; 
+}
+#image
+{
+	position: absolute;
+}
+
+#text
+{
+	z-index: 100;
+	position: absolute; 
+	color: white; 
+	left: 180px; 
+	top: 300px; 
+}
+
 
 
 
