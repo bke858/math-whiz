@@ -54,41 +54,40 @@
 				your score.	If your score is above a 70, you will receive a certificate of completion! If not, simply retake the quiz. 
 				</p>	
 				
-			<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<div class="column">
-						<h3 class="subtitle">Quiz questions</h3>
-					 	<div id="d1" value="3" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/q1.jpeg" alt="Dragger 1" title="Dragger 1"></div><br/>  
-				     	<div id="d2" value="2" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/q3.jpeg" alt="Dragger 2" title="Dragger 2"></div><br/>                        
-				 		<div id="d3" value="0" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/q5.jpeg" alt="Dragger 3" title="Dragger 3"></div><br/>  
-		
-				</div>
+			<div class="content">
+					<article>
+					<header>
+						<h2>Test Time!</h2>
+					</header>
+					<p>To complete the quiz, choose the correct answer for each question. Once you
+					have selected all your answers, click the "Submit Answers" button to retrieve
+					your score.</p>
+ 					
+					<form action="javascript:processForm()" id="quiz1" name="quiz1">
+					
+					<label for="question1">4 x <sup>1</sup>&frasl;<sub>8</sub> = ? </label><br/>
 				
-				    
-				<div class="column">
-						<h3 class="subtitle">Choose your answer</h3>
-				     	<div id="db1" value="0" class="draggerbay" 
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/q2.jpeg" alt="Bay 2" title="Bay2"></div><br/>                        
-				 		<div id="db2" value="1" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/q4.jpeg" alt="Bay 1" title="Bay1"></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><img src="images/q6.jpeg" alt="Bay 3" title="Bay3"></div><br/> 
-		
-				</div>
-				<p id="response">&nbsp;</p>
-				<input type="submit" name="button" value="Submit Your Answer"/><br/>
-				</form>
+					<br><input type="radio" id="question1" name="question1" value="0"/> <sup>4</sup>&frasl;<sub>32</sub><br/>
+					<input type="radio" id="question1" name="question1" value="1"/><sup>1</sup>&frasl;<sub>2</sub><br/>
+					<input type="radio" id="question1" name="question1" value="2"/><sup>5</sup>&frasl;<sub>9</sub><br/>
+					
+					<br><label for="question2">6 ÷ <sup>1</sup>&frasl;<sub>3</sub> = ?</label><br/>
+					
+					<br><input type="radio" id="question2" name="question2" value="0"/> 18<br/>
+					<input type="radio" id="question2" name="question2" value="1"/> <sup>1</sup>&frasl;<sub>18</sub><br/>
+					<input type="radio" id="question2" name="question2" value="2"/> 2<br/>
+					
+					<br><label for="question3"><sup>1</sup>&frasl;<sub>9</sub> ÷ 3 = ?</label><br/>
+					
+					<br><input type="radio" id="question3" name="question3" value="0"/> <sup>1</sup>&frasl;<sub>27</sub><br/>
+					<input type="radio" id="question3" name="question3" value="1"/> 27<br/>
+					<input type="radio" id="question3" name="question3" value="2"/> 3<br/>
+					
+					<br><input type="submit" value="Submit Answers"/>
+					</form>
+				</article>
+			</div>
+				
 			</div>
 		</div>
 	
