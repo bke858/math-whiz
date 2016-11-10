@@ -4,7 +4,7 @@ function processForm()
 	
 	var q1 = document.forms.quiz1.question1;
 	
-	if (q1[2].checked)
+	if (q1[1].checked)
 		{
 		numberOfCorrectResponses= numberOfCorrectResponses + 1;
 		}
@@ -18,16 +18,12 @@ function processForm()
 	
 	var q3 = document.forms.quiz1.question3;
 	
-	if (q3[1].checked)
+	if (q3[0].checked)
 		{
 		numberOfCorrectResponses= numberOfCorrectResponses + 1;
 		}
 	
 	var score= 	Math.round(numberOfCorrectResponses / 3*100);
 	alert( "You recieved a " + score + "!" );
-	
-	if (score >= 70)
-	{
-		parent.document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
-	}
+
 }
