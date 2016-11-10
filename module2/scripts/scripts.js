@@ -102,14 +102,11 @@ function checkAllVisited()
 	var page7 = sessionStorage.getItem("visitPage7");
 	var page8 = sessionStorage.getItem("visitPage8");
 	
-
 	//alert (page2);
 	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited")
 		{
 		// place all on the same line
-		document.getElementById( "content-frame" ).
-		contentWindow.document.getElementById( "quiz-link" ).
-		style.display = "inline";
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
 
 }
@@ -169,8 +166,7 @@ function visitPage8()
 function visitCertificate()
 {
 	var learner_name = oScorm.get( "cmi.core.student_name" );
-	document.getElementById( "content-frame" ).
-	contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }
 
 
