@@ -167,3 +167,10 @@ function visitPage9()
 	sessionStorage.setItem("visitPage9", "visited");
 	checkAllVisited();
 }
+
+//This function adds the student's name to the certificate page.
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.core.student_name" );
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+}
