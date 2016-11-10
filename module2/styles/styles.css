@@ -71,7 +71,7 @@ p
 	z-index: 100;
 	position: absolute; 
 	color: white; 
-	left: 180px; 
+	left: 195px; 
 	top: 215px; 
 }
 
@@ -171,6 +171,11 @@ a:visited
 #certificate-link
 {
 	display: none; 
+}
+
+audio
+{
+	width: 200px; 
 }
 
 
