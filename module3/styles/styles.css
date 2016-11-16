@@ -15,8 +15,22 @@ body
 }
 
 #main-content
+{
+	margin: 15px; 	  
+}
+
+.content
 { 
-	margin: 15px; 
+	padding: 10px;
+	margin: 10px; 
+	display: table-cell; 
+	text-align: center; 
+}
+
+#footer
+{
+	border: solid; 
+	text-align: center; 
 }
 
 .displayed 
@@ -26,30 +40,20 @@ body
     margin-right: auto;
 }
 
-p
-{
-	color: #330066;
-	font-size: 15px; 
-
-}
-
 td
 {
 	padding: 2px; 
 	 
 }
 
-.content
+#slideshow
 {
-	
-	padding: 10px; 
-	display: table-cell; 
+	text-align: center; 
 }
 
-#footer
+p
 {
-	border: solid; 
-	text-align: center; 
+	font-size: 15px; 
 }
 
 .container
@@ -67,8 +71,8 @@ td
 	z-index: 100;
 	position: absolute; 
 	color: white; 
-	left: 220px; 
-	top: 290px; 
+	left: 215px; 
+	top: 215px; 
 }
 
 
@@ -76,38 +80,26 @@ td
 /*title styles*/
 h1
 {
-	font-family: Verdana;
-	text-align: center; 
-
-}
-
-h2
-{
-	font-family: Verdana;
-	text-align: Left; 
-
-}
-
-h3
-{
-	text-align: center;
-	
+	text-align: center;  
+	color:#737373;
 }
 
 .subtitle
 {
-	color: #b30059;
+	color: #47d147;
 }
 
-.title
+.sslink
 {
-	color:#330066;
+	display: inline; 
+	margin: 50px; 
 }
 
 
 
 
 /*nav styles*/
+
 #menu
 {
 	display: table-cell; 
@@ -115,42 +107,60 @@ h3
 	height: 400px; 
 	margin: 10px;  
 	vertical-align: top; 
-	background:#f2e6ff;
-}
-
-a:link
-{
-	color: #330066; 
-	cursor: auto;
-}
-
-a:visited
-{
-	color: #330066;
-	text-decoration: underline; 
-	cursor: auto;
-}
-
-a:visited:active
-{
-	color: #b30059;
-	text-decoration: underline; 
-	cursor: auto;
+	background: #f2f2f2;
 }
 
 #current-page
 {
 	font-weight: bold;
 	font-size: 15px;
-	color: #b30059;
+	color: #737373;
 	text-decoration: underline;
-}			
+}
+
+#audio-title
+{
+	font-weight: bold; 
+	font-size: 15px;
+	color:  #737373;
+	text-align: left; 
+	background: #ede803; 
+	padding: 5px;
+}
+
+#caption-title
+{
+	font-weight: bold; 
+	font-size: 15px;
+	color: #737373;
+	text-align: left; 
+	background: #ede803; 
+	padding: 5px;
+}
 
 #nav
-{
-	
+{	
 	font-size:20px;
-	color: #330066;
+	color: #737373;
+}
+ 
+#caption
+{
+	color:#737373;
+	padding: 5px; 
+}
+
+a:link
+{
+	color: #737373; 
+	cursor: auto;
+}
+
+a:visited
+{
+	color: #47d147;
+	text-decoration: underline; 
+	cursor: auto;
 }
 
 #quiz-link
@@ -163,41 +173,10 @@ a:visited:active
 	display: none; 
 }
 
-
-
-
-/*audio styles*/
-#caption-title
+audio
 {
-	font-weight: bold; 
-	font-size: 15px;
-	color: white;
-	text-align: left; 
 	width: 200px; 
-	background: #330066;
-	padding: 5px;
 }
-
-#audio-title
-{
-	font-weight: bold; 
-	font-size: 15px;
-	color: white;
-	text-align: left; 
-	width: 200px; 
-	background: #330066;
-	padding: 5px; 
-}
-
-#caption
-{
-	color:#330066;
-	overflow: auto;
-	width: 180px;
-}
-
-
-
 
 
 
