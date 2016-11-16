@@ -102,7 +102,7 @@ function checkAllVisited()
 	var page6 = sessionStorage.getItem("visitPage6");
 	var page7 = sessionStorage.getItem("visitPage7");
 	var page8 = sessionStorage.getItem("visitPage8");
-	
+	var page8 = sessionStorage.getItem("visitPage9");
 	//alert (page2);
 	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited" && page9 == "visited")
 		{
