@@ -103,7 +103,7 @@ function checkAllVisited()
 	var page8 = sessionStorage.getItem("visitPage8");
 	
 	//alert (page2);
-	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited")
+	if (page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited")
 		{
 		// place all on the same line
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
