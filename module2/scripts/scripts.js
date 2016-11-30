@@ -80,12 +80,37 @@ function initializeSCORM()
 // This should only be called when the user submits the answers to the quiz
 function reportScores( score )
 {	
+	// remove this line, it's only for testing the score: you don't always
+	// want a score of 78
+	
+	oScorm.set("cmi.core.score.raw", score );
+	oScorm.set("cmi.core.score.min", 0 );
+	oScorm.set("cmi.core.score.max", 100 );
+	
+	
+	if (score >= 70)
+		{
+		
+		parent.document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+		oScorm.set( "cmi.core.lesson_status", "passed" );
+		
+		}
+	else
+		{
+		
+		oScorm.set( "cmi.core.lesson_status", "failed" );
+		
+		}
+	
+	alert( "Reported " + score + " as your score." );
+
 	oScorm.save();
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
 function finishCourse()
 {
+	sessionStorage.clear();
 	oScorm.save();
 	oScorm.quit();
 }
