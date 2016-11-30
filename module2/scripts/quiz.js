@@ -25,6 +25,8 @@ function processForm()
 	
 	var score= 	Math.round(numberOfCorrectResponses / 3 * 100);
 	alert( "You recieved a " + score + "!" );
+	
+	parent.reportScores( score );
 
 }
 

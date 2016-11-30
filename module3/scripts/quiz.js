@@ -26,11 +26,5 @@ function processForm()
 	var score= 	Math.round(numberOfCorrectResponses / 3 * 100);
 	alert( "You recieved a " + score + "!" );
 	
-	
-
-	
-	if (score >= 70)
-		{
-			parent.document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
-		}
+	parent.reportScores( score );
 }
