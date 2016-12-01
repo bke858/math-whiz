@@ -37,7 +37,7 @@ function startCourse()
     		sessionStorage.setItem("visitPage7", "unvisited");
     		sessionStorage.setItem("visitPage8", "unvisited");
     		sessionStorage.setItem("visitPage9", "unvisited");
-
+    		//sessionStorage.setItem("visitPage10", "unvisited");
         }
 	}
 	
@@ -127,17 +127,18 @@ function checkAllVisited()
 	var page6 = sessionStorage.getItem("visitPage6");
 	var page7 = sessionStorage.getItem("visitPage7");
 	var page8 = sessionStorage.getItem("visitPage8");
-	var page8 = sessionStorage.getItem("visitPage9");
+	var page9 = sessionStorage.getItem("visitPage9");
+	//var page10 = sessionStorage.getItem("visitPage10");
 	//alert (page2);
 	if (page1 == "visited" && page2 == "visited" && page3 == "visited" && page4 == "visited" && page5 == "visited" && page6 == "visited" && page7 == "visited" && page8 == "visited" && page9 == "visited")
 		{
 		// place all on the same line
-		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+		document.getElementById( "content-frame" ).
+		contentWindow.document.getElementById( "quiz-link" ).
+		style.display = "inline";
 		}
 
 }
-
-
 
 function visitPage1()
 {
@@ -193,6 +194,11 @@ function visitPage9()
 	checkAllVisited();
 }
 
+//function visitPage10()
+//{
+	//sessionStorage.setItem("visitPage10", "visited");
+	//checkAllVisited();
+//}
 
 //This function adds the student's name to the certificate page.
 function visitCertificate()
@@ -200,5 +206,4 @@ function visitCertificate()
 	var learner_name = oScorm.get( "cmi.core.student_name" );
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }
-
 
